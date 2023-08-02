@@ -221,8 +221,10 @@
 - 伪类选择器
 
   - 伪类专门用来表示元素的一种特殊的状态
+    
     - 例如：访问过的超链接、普通的超链接、获取焦点的文本框
   - :link
+    
     - :link伪类表示普通的链接（没访问过的链接）
   - :visited
     - :visited伪类表示访问过的链接
@@ -230,6 +232,7 @@
       - 浏览器是通过历史记录来判断一个链接是否访问过
       - 由于涉及到了用户隐私问题，所有使用visited伪类只能用来设置字体的颜色
   - :hover
+    
     - :hover伪类表示鼠标移入的状态
   - :active
     - :active表示的是超链接被点击时的状态
@@ -286,8 +289,10 @@
 - 子元素的伪类(结构伪类选择器)
 
   - :first-child
+    
     - :first-child可以选中第一个子元素
   - :last-child
+    
     - :last-child可以选中最后一个子元素
   - :nth-child可以选中任意位置的子元素
     - 该选择器后边可以指定一个参数,指定要选中第几个子元素,（参数用括号括起来）
@@ -375,6 +380,7 @@
   - 当设置字体相关的样式时，经常会使用em
   
 - rem
+  
   - rem是相对于根元素（html）的字体大小来计算
   
 - 颜色表示方式
@@ -395,6 +401,7 @@
 ## 字体的有关样式
 
 - 字体颜色
+  
   - 使用color设置
   
 - 字体大小
@@ -684,8 +691,6 @@
     ```
 
 
-  
-
 - `user-select`:
 
   > 作用:设置或检索是否允许用户选中文本
@@ -702,6 +707,13 @@
   all：当所有内容作为一个整体时可以被选择。如果双击或者在上下文上点击子元素，那么被选择的部分将是以该子元素向上回溯的最高祖先元素。
   
   element：可以选择文本，但选择范围受元素边界的约束*/
+  ```
+
+- `word-wrap`:自动换行
+
+  ```css
+  /*单词太长的话就可能无法超出某个区域，允许对长单词进行拆分，并换行到下一行*/
+  p {word-wrap:break-word;}
   ```
 
   
@@ -723,6 +735,10 @@
 ### 图片自适应宽高:
 
 - 高度自适应:给元素宽设置100%,高度auto,反之一样
+
+### 黄金比例:
+
+*矩形黄金比例：0.618*		
 
 ## **盒子模型**
 
@@ -813,6 +829,7 @@
   - 外边距（margin）
 
     - 外边距指的是当前盒子与其他盒子之间的距离
+      
       - 它不会影响可见框的大小
     - 盒子有四个外边距
       - margin-top
@@ -996,8 +1013,9 @@
 ## **浮动（了解）**
 
 - 块元素在文档流中默认垂直排列，所以这三个div自上而下依次排开，
-  - 如果希望块元素在页面中水平排列，可以使块元素脱离文档流
-
+  
+- 如果希望块元素在页面中水平排列，可以使块元素脱离文档流
+  
 - 使用float来使元素浮动，从而脱离文档流
   - 可选值
     - none，默认值，元素默认在文档流中排列
@@ -1014,11 +1032,13 @@
 - 在文档流中，元素的宽度默认占父元素的全部
 
 - 当块元素设置浮动以后，会完全脱离文档流，
-  - 块元素脱离文档流以后，高度和宽度都被内容撑开
-
+  
+- 块元素脱离文档流以后，高度和宽度都被内容撑开
+  
 - 内联元素的浮动
-  - 内联元素脱离文档流以后会变成块元素
-
+  
+- 内联元素脱离文档流以后会变成块元素
+  
 - 高度塌陷问题以及解决方案
 
   - 方法一:额外标签法
@@ -1231,8 +1251,7 @@ logo功能:
     2. 不脱标,占位
     3. 标签显示模式特点:不变
     
-    
-
+  
 - 绝对定位
 
   - 绝对定位特点
@@ -1664,10 +1683,10 @@ transform: skew();
 
 ```css
 background-image: linear-gradient(
-  渐变方向,
-  颜色1 终点位置,
-  颜色2 终点位置,
-  ......
+  渐变方向,
+  颜色1 终点位置,
+  颜色2 终点位置,
+  ......
 );
 
 /*补充:透明:transparent*/
@@ -1685,10 +1704,10 @@ background-image: linear-gradient(
 
 ```css
 background-image: radial-gradient(
-  半径 at 圆心位置,
-  颜色1 终点位置,
-  颜色2 终点位置,
-  ......
+  半径 at 圆心位置,
+  颜色1 终点位置,
+  颜色2 终点位置,
+  ......
 );
 ```
 
@@ -1818,18 +1837,18 @@ transform: scaleZ();
 ```css
 /* 方式一 */
 @keyframes 动画名称 {
-  from {}
-  to {}
+  from {}
+  to {}
 }
 
 /* 方式二 */
 /*百分比表示的是动画时长的百分比*/
 @keyframes 动画名称 {
     /*当动画开会状态样式 根 盒子默认样式相同,可以省略动画开始状态的*/
-  0% {}
-  10% {}
-  ......
-  100% {}
+  0% {}
+  10% {}
+  ......
+  100% {}
 }
 ```
 
@@ -1902,8 +1921,8 @@ animation: 动画名称 动画花费时长;
 
 ```css
 animation: 
-  动画一,
-  动画二,
+  动画一,
+  动画二,
   ... ...
 ;
 ```
@@ -1927,16 +1946,16 @@ animation:
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!– 视口标签 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Document</title>
+  <title>Document</title>
 </head>
 <body>
-  
+  
 </body>
 </html>
 ```
@@ -1982,9 +2001,9 @@ animation:
 
 ```css
 @media (width:320px) {
-  html {
-    background-color: green;
-  }
+  html {
+    background-color: green;
+  }
 }
 ```
 
@@ -2053,10 +2072,10 @@ VS Code 插件：Easy LESS，保存 less文件后自动生成对应的 CSS 文�
 @myColor: pink;
 // 使用变量
 .box {
-  color: @myColor;
+  color: @myColor;
 }
 a {
-  color: @myColor;
+  color: @myColor;
 }
 ```
 
@@ -2086,7 +2105,7 @@ a {
 
 ### 禁止导出
 
-写法：在 less 文件第一行添加:  // out: false 
+写法：在 less 文件第一行添加:  // out: false 
 
 
 

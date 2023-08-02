@@ -1,0 +1,785 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:html</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="html-html5">html+html5</h1>
+<h2 id="-">标签（等价于元素）</h2>
+<ul>
+<li>标签结构：&lt;标签名&gt;标签内容&lt;/标签名&gt;，其中&quot;/&quot;是标签结束的标志</li>
+<li><html></html>是跟html跟标签，一个页面中有且只有一个根标签，网页中所有内容都应该写在html根标签中</li>
+<li><p><html></html>中有两个子标签</p>
+<ul>
+<li><head></head><ul>
+<li>head标签，该标签中的内容，不会在网页中直接显示，用来帮助解析页面</li>
+</ul>
+</li>
+<li><body></body></li>
+</ul>
+</li>
+<li><title></title>:网页的标题标签，默认会显示在浏览器的标题栏中，搜索引擎会首先检索title标签中的内容，是网页中对于搜索引擎最重要的内容</li>
+<li><body></body>:body标签用来设置网页的主体内容，网页中所有可见内容，都在body中编写</li>
+</ul>
+<h2 id="html-">html注释</h2>
+<ul>
+<li>注释格式：<!-- 要注释的内容--><ul>
+<li>注意：标签不能嵌套</li>
+</ul>
+</li>
+</ul>
+<h2 id="-">属性</h2>
+<ul>
+<li>可以通过属性来设置标签用来处理标签中的内容</li>
+<li>可以 在开始标签中添加属性</li>
+<li>属性需要写在开始标签中，实际上就是一个名值对结构,属性名 = “属性值”</li>
+<li>一个标签中可以设置多个属性，属性之间需要用空格隔开</li>
+</ul>
+<h2 id="-">文档声明</h2>
+<ul>
+<li><p>H5的文档声明，声明当前的网页是按照HTML5标准编写的，编写时要将h5的文档声明写在网页的最上边</p>
+</li>
+<li><p>格式为：&lt;!DOCTYPE html&gt;</p>
+</li>
+<li><p>meta标签</p>
+<ul>
+<li><meta charset="编码字符集名称" />
+</li>
+<li><p>meta标签的作用</p>
+<ul>
+<li>告诉浏览器，网页所采用的编码字符集</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>meta用来设置网页的一些元数据，比如网页所采用的字符集，关键字，简介</p>
+</li>
+</ul>
+<ul>
+<li>meta是一个自结束标签，编写一个自结束标签时，可在开始标签中加一个/</li>
+</ul>
+<h2 id="-">常用的标签</h2>
+<ul>
+<li><p>标题标签</p>
+</li>
+<li><p>在HTML中,一共有六级标签h1~h6</p>
+</li>
+<li><p>段落标签</p>
+<ul>
+<li>用于表示内容中的一个自然段</li>
+<li>使用p标签来表示一个段落</li>
+<li>p标签中的文字,默认会独占一行,并且段与段之间会有一个间距</li>
+</ul>
+</li>
+<li><p>在HTML中,字符之间写再多空格,浏览器也会当成一个空格解析,包括回车</p>
+</li>
+<li><p>br标签</p>
+</li>
+<li><p>在=表示换行,br标签是一个自结束标签</p>
+</li>
+<li><p>hr标签</p>
+</li>
+<li><p>可以生成一条水平线,也是自结束标签</p>
+</li>
+<li><p>无语义的布局标签</p>
+<blockquote>
+<p>作用:布局网页(划分网页区域,摆放内容)</p>
+</blockquote>
+<ul>
+<li>div:独占一行</li>
+<li>span:不换行</li>
+</ul>
+</li>
+</ul>
+<h2 id="-">字符实体</h2>
+<ul>
+<li><p>实体的语法</p>
+<p>  | 显示结构 | 描述   | 实体名称 |
+  | -------- | ------ | -------- |
+  |          | 空格   | &nbsp;   |
+  | &lt;        | 小于号 | &lt;     |
+  | &gt;        | 大于号 | &gt;     |</p>
+</li>
+</ul>
+<p>​    </p>
+<h2 id="-">图片标签</h2>
+<ul>
+<li>img标签（同时具有行内元素，行内块，和块级元素的特性）<ul>
+<li>img标签用来向网页引入一个外部图片</li>
+<li>img标签也是一个自结束标签</li>
+<li>语法：<img src="url" />（url表示存储图像的位置）</li>
+</ul>
+</li>
+<li>属性<ul>
+<li>（源属性）src：设置一个外部图片的路径</li>
+<li>（替换文本属性）alt<ul>
+<li>用来设置在图片不能显示时，对图片的描述</li>
+<li>搜索引擎可以通过alt属性来识别不同的图片</li>
+<li>如果不写alt属性，则搜索引擎不会对img中的图片进行收录</li>
+</ul>
+</li>
+<li>width：用来修改图片的宽度，一般用px作单位</li>
+<li>height：修改图片高度，px作单位<ul>
+<li>宽度和高度两个属性只设置一个时，另外一个也会同时等比例调整大小</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="-">相对路径和绝对路径</h2>
+<ul>
+<li><p>相对路径</p>
+<ul>
+<li><code>/</code>表示进入某个文件夹里面</li>
+<li><code>.</code>表示当前文件所在文件夹</li>
+<li><code>..</code>表示当前文件上一级所在文件夹</li>
+</ul>
+</li>
+<li>绝对路径 - 从盘符触发查找目标(mac从根目录)</li>
+</ul>
+<h2 id="-">图片格式</h2>
+<ul>
+<li><p>JPEG(JPG)</p>
+<ul>
+<li>JPG图片支持的颜色比较多，图片可压缩，但是不支持透明</li>
+<li>一般使用JPEG来保存照片等颜色丰富的图片</li>
+</ul>
+</li>
+<li><p>GIF</p>
+<ul>
+<li>GIF支持的颜色少，只支持简单透明，支持动态图</li>
+<li>图片颜色单一或者是动态图时可使用gif</li>
+</ul>
+</li>
+<li><p>PNG</p>
+<ul>
+<li>PNG支持的颜色多，并且支持复杂的透明图片</li>
+<li>可用来显示颜色复杂的透明的图片</li>
+</ul>
+</li>
+<li><p>webp</p>
+<ul>
+<li>这种格式是谷歌新推出的专门用来表示网页中的图片的一种格式</li>
+<li>他具备其他图片格式的所有优点，而且文件特别的小</li>
+<li>缺点，兼容性不行</li>
+</ul>
+</li>
+<li><p>base64</p>
+<ul>
+<li>将图片使用base64编码，这样可以将图片转换为字符，通过字符的形式来引入图片</li>
+<li>一般都是一些需要和网页一起加载的图片才会使用base64</li>
+</ul>
+</li>
+<li><p>图片使用原则</p>
+<ul>
+<li>效果不一致，使用效果好的</li>
+<li>效果一致，使用小的</li>
+</ul>
+</li>
+<li><p>meta标签用途</p>
+<ul>
+<li><p>使用meta标签还可以用来设置网页的关键字</p>
+<ul>
+<li><meta name="关键字" content="描述内容" /></li>
+</ul>
+</li>
+<li><p>用来指定网页的描述</p>
+<ul>
+<li><p>搜索引擎在检索页面时，会同时检索页面中的关键字和描述，但是这两个值不会影响页面在搜索引擎中的排名</p>
+</li>
+<li><meta name=“description” content=“要描述的内容” /></li>
+</ul>
+</li>
+<li><p>使用meta标签可以用来做请求的重定向</p>
+<ul>
+<li><meta http-equiv=“refresh” content=“停留秒数;url=绝对路径或相对路径 ” />
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="html-">HTML语法规范</h2>
+<ul>
+<li>HTML中不区分大小写，但我们一般都使用小写</li>
+<li>HTML中的注释不能嵌套</li>
+<li>HTML标签必须结构完整，要么成对出现，要么自结束标签</li>
+<li>HTML标签可以嵌套，但是不能交叉嵌套</li>
+<li>HTML标签中的属性必须有值，且值必须有引号</li>
+</ul>
+<h2 id="-">内联框架</h2>
+<ul>
+<li>使用内联框架可以引入一个外部的页面<ul>
+<li>使用iframe创建一个内联框架<ul>
+<li>语法：<iframe src="文件路径" name=“属性值”></iframe></li>
+</ul>
+</li>
+<li>属性<ul>
+<li>src：指向一个外部路径，可以使用相对路径</li>
+<li>name：为内联框架指定一个name属性</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>（在现实开发中不推荐使用内联框架，因为内联框架中的内容不会被搜索引擎所检索）</li>
+</ul>
+<h2 id="-">超链接</h2>
+<ul>
+<li>使用超链接可让我们从一个页面跳转到另一个页面</li>
+<li>使用a标签来创建一个超链接</li>
+<li>属性<ul>
+<li>href：指向链接跳转的目标地址，可以写一个相对路径也可以写一个完整的地址</li>
+<li>a标签中的target属性可以用来指定打开链接的位置<ul>
+<li>可选值<ul>
+<li>_self,表示在当前窗口中打开（默认值）</li>
+<li>_blank，在新的窗口中打开链接</li>
+<li>可以设置一个内联框架的name属性值，链接将会在指定的内联框架中打开</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>center标签中的内容，会默认在页面中居中显示</li>
+<li>锚：“#”<ul>
+<li>在超链接中，如果不确定地址可以直接写一个“#”作为占位符</li>
+<li>如果将链接地址设置为“#”，则点击超链接以后，会自动跳转到页面的顶部</li>
+<li><strong>补充</strong>: 如果将超链接地址设置为元素的<code>id</code>值,则会提跳转到元素所在的位置</li>
+</ul>
+</li>
+<li>id<ul>
+<li>html中的其中一个属性，每一个元素都可以设置，该属性可以作为标签的唯一标识</li>
+<li>注意<ul>
+<li>id属性在同一个页面中只能有一个不能重复</li>
+<li>这个属性值的开头不能是数字</li>
+</ul>
+</li>
+<li>页面的跳转<ul>
+<li>直接在href中写 #id的属性值</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>电子邮件超链接<ul>
+<li>语法：href=“mailto:邮件地址”</li>
+</ul>
+</li>
+</ul>
+<h2 id="-">文本标签</h2>
+<ul>
+<li><p>em和strong</p>
+<ul>
+<li>两个标签都表示一个强调的内容</li>
+<li>em主要表示语气上的强调，em在浏览器中默认使用斜体显示</li>
+<li>strong表示强调的内容，比em更强烈，默认使用粗体显示</li>
+</ul>
+</li>
+<li><p>i标签</p>
+<ul>
+<li>i标签中的内容会以斜体显示</li>
+</ul>
+</li>
+<li><p>b标签</p>
+<ul>
+<li>b标签中的内容会以加粗显示</li>
+<li>h5规则中规定，如果不需要着重的内容而是单纯的加粗或者是斜体，就可以使用b和i标签</li>
+</ul>
+</li>
+<li><p>small标签</p>
+<ul>
+<li>small标签中的内容会比其他父元素中的文字要小一些</li>
+<li>在h5中使用small标签来表示一些细则一类的内容<ul>
+<li>比如：合同的小字。网站的版权声明都可以放到small</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>cite标签</p>
+<ul>
+<li>网页中所有的加书名号的内容都可以使用cite标签，表示参考的内容<ul>
+<li>比如书名 歌名 话剧名 电影名</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>q标签</p>
+<ul>
+<li>q标签表示一个短的引用（行内引用）</li>
+<li>q标签引用的内容，浏览器会默认加上引号</li>
+</ul>
+</li>
+<li><p>blockquote标签</p>
+<ul>
+<li>表示一个长引用（块级引用）</li>
+</ul>
+</li>
+<li><p>sup标签</p>
+<ul>
+<li>使用sup标签来设置一个上标</li>
+</ul>
+</li>
+<li><p>sub标签</p>
+<ul>
+<li>sub标签用来表示一个下标</li>
+</ul>
+</li>
+<li><p>del标签</p>
+<ul>
+<li>使用del标签来表示一个删除的内容</li>
+<li>del标签中内容，会自动添加删除线</li>
+</ul>
+</li>
+<li><p>ins标签</p>
+<ul>
+<li>ins表示一个插入的内容</li>
+<li>ins中的内容，会自动添加下划线</li>
+</ul>
+</li>
+<li><p>pre标签</p>
+<ul>
+<li>pre是一个预格式标签，会将代码中的格式保存，不会忽略多个空格</li>
+</ul>
+</li>
+<li><p>code标签</p>
+<ul>
+<li>专门用来表示代码</li>
+<li>我们一般结合使用pre和code来表示一段代码</li>
+</ul>
+</li>
+</ul>
+<h2 id="-">有序列表和无序列表标签</h2>
+<ul>
+<li><p>列表：列表就相当于去超市购物时的购物清单</p>
+</li>
+<li><p>在HTML中也可创建列表，在网页中一共有三种列表</p>
+<ul>
+<li><p>1.无序列表</p>
+<ul>
+<li><p>使用ul标签来创建一个无序列表</p>
+</li>
+<li><p>使用li在ul中创建一个列表项，一个li就是一个列表项</p>
+</li>
+<li><p>通过type属性可以修改无序列表中的项目符号</p>
+<ul>
+<li><p>注意:默认的项目符号我们一般都不修改！！（如果需要设置项目符号，则可以采用li来设置背景图片的方式来设置）</p>
+<blockquote>
+<p> <strong>注意事项:</strong></p>
+<p><strong>ul标签里面只能包裹li标签</strong></p>
+<p>li标签里面可以包裹任何内容</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>2.有序列表</p>
+<ul>
+<li>有序列表和无序列表类似，只不过它使用ol来代替ul</li>
+<li>有序列表使用有序的序号作为项目符号</li>
+<li>type属性，可以指定序号的类型</li>
+<li>ol也是块元素</li>
+<li>列表之间都可以互相嵌套，可以在无序列表中放个有序列表，也可以在有序列表中放一个无序列表</li>
+</ul>
+<blockquote>
+<p> <strong>注意事项:</strong></p>
+<p><strong>ul标签里面只能包裹li标签</strong></p>
+<p>li标签里面可以包裹任何内容</p>
+</blockquote>
+</li>
+<li><p>3.定义列表</p>
+<ul>
+<li><p>定义列表标签</p>
+<ul>
+<li>定义列表标签用来对一些词汇或内容进行定义</li>
+<li>使用dl来创建一个定义列表<ul>
+<li>dl中有两个子标签<ul>
+<li>dt：被定义的内容</li>
+<li>dd：对定义的内容的描述</li>
+<li>同样dl和ul之间都可以互相嵌套</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>注意:</p>
+<p><strong>dl里面只能包含dt和dd</strong></p>
+<p>dt和dd里面可以包含任何内容</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>去掉项目符号可用</p>
+<ul>
+<li>ul{list-style:none;}</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="-">表格</h2>
+<ul>
+<li>| 标签名  | 说明             |
+| ------- | ---------------- |
+| table   | 表格             |
+| tr      | 行               |
+| th      | 表头单元格       |
+| td      | 内容单元格       |
+| caption | 表格的整体大标题 |</li>
+</ul>
+<blockquote>
+<p> 提示:border属性可以为表格添加边框线</p>
+</blockquote>
+<ul>
+<li>表格结构标签(了解)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>标签名</th>
+<th>含义</th>
+<th>特殊说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>thead</td>
+<td>头部</td>
+<td>头部内容</td>
+</tr>
+<tr>
+<td>tbody</td>
+<td>主体</td>
+<td>主要内容</td>
+</tr>
+<tr>
+<td>tfoot</td>
+<td>表格底部</td>
+<td>汇总信息区域</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>合并单元格</li>
+<li>步骤<ol>
+<li>保留<strong>最左最上</strong>的单元格,添加属性(取值是<strong>数字</strong>,<strong>表示需要合并的单元格数量</strong>)<ul>
+<li>跨行合并,保留最上单元格,添加属性<code>rowspan</code></li>
+<li>跨列合并,保留最左单元格,添加属性<code>colspan</code></li>
+</ul>
+</li>
+<li>删除其他单元格</li>
+</ol>
+</li>
+<li>border-spacing属性</li>
+<li>table和td边框之间默认有一个距离<ul>
+<li>通过border-spacing属性可以设置这个距离</li>
+</ul>
+</li>
+<li>border-collapse</li>
+<li>border-collapse可以用来设置表格的边框合并</li>
+<li>如果设置了边框合并，则border-spacing自动失效</li>
+<li>使用表格布局<ul>
+<li>以前表格更多的情况实际上是用来对页面进行布局的，但是使用表格这种方式早已被CSS所淘汰了</li>
+<li>表格的列数由td最多的那行决定</li>
+<li>表格是可以嵌套，可以在td中放置一个表格</li>
+</ul>
+</li>
+</ul>
+<h2 id="-">表单</h2>
+<ul>
+<li><p><code>form</code></p>
+<ul>
+<li>表单的作用就是用来将用户信息提交给服务器的</li>
+<li>比如，百度的搜索框 注册 登录这些操作都需要填写表单</li>
+<li><p>使用form标签创建一个表单</p>
+<ul>
+<li><p>form标签中必须指定一个action属性,该属性指向的是一个服务器的地址</p>
+</li>
+<li><p>当我们提交表单时将会提交到action属性对应的地址</p>
+</li>
+<li><p>使用form创建的仅仅是一个空白的表单，我们还需要向form中添加不同的表单项</p>
+</li>
+<li>使用input表来创建一个文本框，它的type属性是text<ul>
+<li>如果希望表单项中的数据会提交到服务器中，还必须给表单项指定一个name属性</li>
+<li>name表示提交内容的名字</li>
+</ul>
+</li>
+<li>用户填写的信息会附在url地址的后边以查询字符串的形式发送给服务器(url地址？查询字符串)<ul>
+<li>格式</li>
+<li>属性名=属性值&amp;属性名=属性值&amp;属性名=属性值&amp;属性名=属性值</li>
+<li>在文本框中也可以指定value属性值，该值将会作为文本框的默认值显示</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>input标签基本使用</p>
+<p>| type属性值 | 说明                                        |
+| ---------- | ------------------------------------------- |
+| text       | 文本框,用于输入单行文本                     |
+| password   | 密码框                                      |
+| radio      | 单选框                                      |
+| checkbox   | 多选框                                      |
+| file       | 上传文件(如果上传多个文件,设置multiple属性) |</p>
+<ul>
+<li><p>input占位文本:<code>placeholder</code>属性</p>
+</li>
+<li><p>单选框</p>
+<p>常用属性</p>
+<p>| 属性名  | 作用     | 特殊说明                            |
+| ------- | -------- | ----------------------------------- |
+| name    | 控件名称 | 控件分组,同组只能选中一个(单选功能) |
+| checked | 默认选中 | 属性名和属性值相同,简写为一个单词() |</p>
+</li>
+</ul>
+<blockquote>
+<p>==补充==:</p>
+<pre><code class="lang-css">/*浏览器优先生效 input 标签的默认宽度,所以flex:1 不生效*/
+/*解决办法:重置input默认宽度 -&gt; width:*/
+</code></pre>
+</blockquote>
+<ul>
+<li><p>新增属性:</p>
+<p>1.autocomplete
+autocomplete:on|off;
+当为on的时候，浏览器能自动存储用户输入的内容。当用户返回到曾经填写过值的页 面时，浏览器能把用户写过的值自动填写在相应的input框里。免去了用后台来做，来传送数据的麻烦。</p>
+<p>2.autofocus(谷歌支持)
+autofocus:autofocus; 当页面加载时使字段获得焦点，当type=&quot;hidden&quot;时，无法使用。一个页面只能有一个autofocus字段聚焦。
+例：<input autofocus type="search" value="请输入信息"/></p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>3.placeholder(谷歌支持)
+placeholder表示占位符，当type=&quot;text&quot;或type=&quot;email&quot;等属性时，提示用户输入的信息格式或内容 等。
+</code></pre><p>​    </p>
+<ul>
+<li><p>多选框</p>
+<ul>
+<li>使用input创建一个多选值,它的type属性使用checkbox ,默认选中属性是checked</li>
+</ul>
+</li>
+<li><p>下拉列表</p>
+<ul>
+<li>使用select来创建一个下拉列表</li>
+<li>下拉列表的name属性需要指定给select，而value属性需要指定给option</li>
+<li>可以通过在option中添加selected=“selected”来将选项设置为默认选中</li>
+<li>当为select添加一个multiple=&quot;multiple&quot;，则下拉列表为一个多选的下拉列表</li>
+<li>分组<ul>
+<li>在select中可以使用optgroup对选项进行分组<ul>
+<li>同一个optgroup中的选项一组</li>
+</ul>
+</li>
+<li>可以通过lable属性来指定分组的名字</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>提交按钮</p>
+<ul>
+<li>可以将表单汇总的信息提交给服务器</li>
+<li>使用input创建一个提交按钮，它的type属性值是submit</li>
+<li>在提交按钮中可以通过value属性来指定按钮上的文字</li>
+</ul>
+</li>
+<li><p>fieleset</p>
+<ul>
+<li>在表单中可以使用fieleset来为表单项进行分组，</li>
+<li>可以将表单项中的同一组放到一个fieldset中</li>
+<li>在fidldset可以使用legend子标签，来指定组名</li>
+</ul>
+</li>
+<li><p>label标签</p>
+<blockquote>
+<p> 作用:</p>
+<p> 1.为我们提供了一个标签,专门用来选中表单中的提示文字的</p>
+<p> 2.某个标签的说明文本</p>
+</blockquote>
+<ul>
+<li><p>写法一:</p>
+<blockquote>
+<p> 设置label标签的for属性值和表单控件id属性值</p>
+</blockquote>
+<pre><code class="lang-html">&lt;input type=&quot;radio&quot; id=&quot;man&quot;&gt;
+&lt;label for=&quot;man&quot;&gt;男&lt;/label&gt;
+</code></pre>
+</li>
+<li><p>二:</p>
+<blockquote>
+<p>使用label标签包裹文字和表单控件,不需要属性</p>
+</blockquote>
+<pre><code class="lang-html">&lt;label&gt;&lt;input type=&quot;radio&quot;&gt;女&lt;/label&gt;
+</code></pre>
+</li>
+</ul>
+<blockquote>
+<p>好处:增大表单控件的点击范围</p>
+</blockquote>
+</li>
+<li><p>文本域</p>
+<ul>
+<li><p>使用textarea创建一个文本域</p>
+<ul>
+<li>在文本框和文本域中可以通过placeholder属性来指定水印文字（）水印</li>
+<li><p>这个属性在IE8及以下浏览器中不支持，如果要兼容IE8,需要使用js</p>
+<p>常用属性</p>
+<p>| 属性名 | 值     | 作用                       |
+| ------ | ------ | -------------------------- |
+| cols   | number | 规定文本区域内可见的宽度。 |
+|        | number | 规定文本区域内可见的行数。 |</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>重置按钮</p>
+<ul>
+<li><input type="reset" />可以创建一个重置按钮，</li>
+<li>点击重置按钮以后表单中内容将会恢复为默认值</li>
+</ul>
+</li>
+<li><p>无功能按钮</p>
+<ul>
+<li>使用input type=button可以用来创建一个单纯的按钮，</li>
+<li>这个按钮没有任何功能，只能拿被点击</li>
+</ul>
+</li>
+<li><p>button标签</p>
+<p>type属性值:</p>
+<p>| type属性值 | 说明                                        |
+| ---------- | ------------------------------------------- |
+| submit     | 提价按钮,点击后可以提交数据到后台(默认功能) |
+| reset      | 重置按钮,点击后将表单控件恢复默认值         |
+| button     | 普通按钮                                    |</p>
+</li>
+</ul>
+<blockquote>
+<p>注意:以上功能需配合form表单使用</p>
+</blockquote>
+<h3 id="-">表单的默认行为</h3>
+<ul>
+<li><h4 id="-">行为一：</h4>
+<p>当我点击提交，页面发生了跳转，<strong>跳转的url是我在form标签中action属性定义的url</strong>！所以：<strong>表单中的button标签默认类型是submit</strong></p>
+<h4 id="-">行为二：</h4>
+<p><strong>表单中会自动注册回车提交事件，并且IE中表现一致</strong></p>
+<h4 id="-">行为三：</h4>
+<p><strong>当未指名form action 属性和button type类型，会先触发自定义按钮事件然后表单请求事件（表单又重新刷新了一遍）</strong></p>
+</li>
+</ul>
+<h2 id="-">布局标签（了解）</h2>
+<pre><code class="lang-html">&lt;!-- 布局标签（结构化语义标签）--&gt;
+
+&lt;!-- 
+         header 表示网页的头部
+         main 表示网页的主体部分（一个网页中只会有一个main）
+         footer 表示网页的底部
+         nav 表示网页中的导航
+         aside 和主体相关的其他内容（侧边栏）
+         article 表示一个独立的文章
+
+        section 表示一个独立的区块，上边的标签都不能表示时使用section
+
+        div没有语义，就用来表示一个区块，
+        span 行内元素，没有任何的语义，一般用于在网页中中文字
+      --&gt;
+</code></pre>
+<h2 id="-">音视频标签</h2>
+<ul>
+<li><p>音频标签:audio </p>
+</li>
+<li><p>视频标签:video</p>
+<p>| 属性     | 作用             | 特殊说明             |
+| -------- | ---------------- | -------------------- |
+| src      | 音频url          | 支持格式:MP3,Ogg,Wav |
+| control  | 显示音频控制面板 |                      |
+| loop     | 循环播放         |                      |
+| autoplay | 自动播放         | 一般浏览器禁用video  |</p>
+</li>
+</ul>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>
